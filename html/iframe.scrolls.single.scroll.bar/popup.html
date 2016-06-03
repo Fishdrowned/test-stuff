@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Popup</title>
+	<style>
+		html,body{background:#fec;overflow-x:hidden;margin:0;padding:0;}
+		.content{margin:0 auto;padding:0 20px;}
+		.placeholder{margin:600px 0;}
+	</style>
+</head>
+<body>
+<div class="content">
+	<p><a href="javascript:closePopup();">X</a></p>
+	<p>Popup content</p>
+	<div class="placeholder">Scroll me</div>
+	<p>End of popup content</p>
+</div>
+<script type="text/javascript">
+	//<![CDATA[
+	function closePopup() {
+		var $ = window.top.jQuery;
+		$('#popup_frame').remove();
+		$('html').removeClass('show-popup');
+	}
+	//]]>
+</script>
+</body>
+</html>

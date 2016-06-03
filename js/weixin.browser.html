@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Window properties list</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
+<body>
+<pre id="wx"></pre>
+<pre id="output"></pre>
+<script type="text/javascript">
+	!function () {
+		var t0 = new Date, _load = window.onload = function () {
+			var wProperties = [];
+			for (var p in window) wProperties.push(p);
+			wProperties.sort();
+			wProperties.push('Total: ' + wProperties.length);
+			document.getElementById('output').innerHTML = wProperties.join('\n');
+		};
+
+		var _wxBridgeReady = function (e) {
+			var t1 = new Date, eProperties = [];
+			for (var p in e) eProperties.push(p + ' = ' + e[p]);
+			document.getElementById('wx').innerHTML += 'WeixinJSBridge loaded!\n' +
+			'Loading time: ' + (t1 - t0) + 'ms\n' +
+			'Event: ' + e.type + '\n' +
+			'Target: ' + e.target.nodeName;
+			_load();
+		};
+
+		if ('addEventListener' in document) {
+			document.addEventListener('WeixinJSBridgeReady', _wxBridgeReady, false);
+		} else if (document.attachEvent) {
+			document.attachEvent('WeixinJSBridgeReady', _wxBridgeReady);
+			document.attachEvent('onWeixinJSBridgeReady', _wxBridgeReady);
+		}
+	}();
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYP html>
+<html>
+<head>
+	<title>Check is touch screen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<p>Does this device has a touch screen?</p>
+<p id="result"></p>
+<p>Is this device orientable?</p>
+<p id="orientable-result"></p>
+<p>Viewport size:</p>
+<p id="viewport-size"></p>
+<script type="text/javascript">
+//<![CDATA[
+!function () {
+	var container = $('#result'), orientableContainer = $('#orientable-result'), viewportSizeContainer = $('#viewport-size');
+	container.html('ontouchstart' in document.documentElement ? 'Yes!' : 'No.');
+	orientableContainer.html(typeof window.orientation != 'undefined' ? 'Yes!' : 'No.');
+
+	$(window).on('resize load', function () {
+		viewportSizeContainer.html($(window).width() + ' x ' + $(window).height())
+	});
+}();
+//]]>
+</script>
+</body>
+</html>
