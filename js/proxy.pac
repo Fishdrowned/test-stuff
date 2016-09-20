@@ -1,6 +1,6 @@
-var socksProxyHostIp = httpProxyHostIp = '192.168.201.200';
+var socksProxyHostIp = httpProxyHostIp = '192.168.202.200';
 //var socksProxyHostIp = httpProxyHostIp = '192.168.200.114';
-var socksProxyHostIp = '192.168.200.10', httpProxyHostIp = '192.168.201.200';
+var socksProxyHostIp = '192.168.200.10', httpProxyHostIp = '192.168.202.200';
 //var autoproxy = 'SOCKS5 ' + socksProxyHostIp + ':7070; PROXY ' + httpProxyHostIp + ':8118',
 //var autoproxy = 'SOCKS5 ' + socksProxyHostIp + ':7070',
 var autoproxy = 'PROXY ' + httpProxyHostIp + ':8119',
@@ -138,7 +138,7 @@ var autoproxy_host = {
 "city9x.com":1,"civicparty.hk":1,"civilhrfront.org":1,"cjb.net":1,"ck101.com":1,"cl.d0z.net":1,"cl.ly":1,"classicalguitarblog.net":1,"clb.org.hk":1,
 "clientsfromhell.net":1,"clipfish.de":1,"cms.gov":1,"cmule.com":1,"cmxlog.com":1,"cn.calameo.com":1,"cn.dayabook.com":1,"cn.fmnnow.com":1,"cn.giganews.com":1,
 "cn.ibtimes.com":1,"cn.reuters.com":1,"cn.streetvoice.com":1,"cn.tmagazine.com":1,"cn.uncyclopedia.wikia.com":1,"cn.voa.mobi":1,"cn.wsj.com":1,
-"cn2.streetvoice.com":1,"cna.com.tw":1,"cnavista.com.tw":1,"cnd.org":1,"cnn.com":1,"cochina.org":1,"cocoa.zonble.net":1,"code1984.com":1,"codeboxapp.com":1,
+"cn2.streetvoice.com":1,"cna.com.tw":1,"cnavista.com.tw":1,"cnd.org":1,"cnn.com":1,"cochina.org":1,"cocoa.zonble.net":1,"code1984.com":1,"codeboxapp.com":1,"codecov.io":1,
 "codeshare.io":1,"collateralmurder.com":1,"collateralmurder.org":1,"com.google":1,"comefromchina.com":1,"compileheart.com":1,"connect.facebook.net":1,
 "connectedchina.reuters.com":1,"conoyo.com":1,"contests.twilio.com":1,"cookingtothegoodlife.com":1,"coolaler.com":1,"coolder.com":1,"coolloud.org.tw":1,
 "corumcollege.com":1,"cotweet.com":1,"couchdbwiki.com":1,"coveringweb.com":1,"cpj.org":1,"crackle.com":1,"crd-net.org":1,"creaders.net":1,"crossthewall.net":1,
@@ -157,7 +157,7 @@ var autoproxy_host = {
 "duckmylife.com":1,"duihua.org":1,"duoweitimes.com":1,"duping.net":1,"duplicati.com":1,"dupola.com":1,"dupola.net":1,"dvorak.org":1,"dw-world.com":1,
 "dw-world.de":1,"dw.de":1,"dwnews.com":1,"dy24k.info":1,"dynawebinc.com":1,"dzze.com":1,"e-gold.com":1,"e-info.org.tw":1,"e-traderland.net":1,
 "eamonnbrennan.com":1,"earthquake.usgs.gov":1,"ebookbrowse.com":1,"ebookee.com":1,"echofon.com":1,"ecministry.net":1,
-"edicypages.com":1,"edoors.com":1,"edubridge.com":1,"eevpn.com":1,"efcc.org.hk":1,"efksoft.com":1,"eic-av.com":1,"electionsmeter.com":1,"eltondisney.com":1,
+"edicypages.com":1,"edoors.com":1,"edubridge.com":1,"eevpn.com":1,"efcc.org.hk":1,"efksoft.com":1,"eic-av.com":1,"electionsmeter.com":1,"elementary.io":1,"eltondisney.com":1,
 "emacsblog.org":1,"embr.in":1,"emory.edu":1,"emule-ed2k.com":1,"en.favotter.net":1,"en.wikipedia.org":1,"encrypted.google.com":1,"englishfromengland.co.uk":1,
 "entermap.com":1,"epochtimes-bg.com":1,"epochtimes-romania.com":1,"epochtimes.co.il":1,"epochtimes.co.kr":1,"epochtimes.com":1,"epochtimes.de":1,
 "epochtimes.fr":1,"epochtimes.ie":1,"epochtimes.jp":1,"epochtimes.ru":1,"epochtimes.se":1,"epochtimestr.com":1,"epochweekly.com":1,"erabaru.net":1,
