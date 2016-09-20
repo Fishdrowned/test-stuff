@@ -14,7 +14,7 @@ $ssoOptions = compact('ssoServer', 'notifyUrl', 'initTime', 'initToken', 'debug'
     <!--[if IE]>
     <script src="http://phwoolcon.dev/assets/base/js/ie/json2-20160501.min.js"></script>
     <![endif]-->
-    <script src="http://phwoolcon.dev/assets/base/js/sso.js"></script>
+    <script src="http://phwoolcon.dev/assets/base/packages/phwoolcon-auth/sso.js"></script>
 </head>
 <body>
 <script>
