@@ -121,6 +121,6 @@ class Timer
     public static function stop()
     {
         static::$_times[1] = explode(' ', microtime());
-        return (static::$_times[1][0] - static::$_times[0][0]) + (static::$_times[1][1] - static::$_times[0][1]);
+        return (int)(static::$_times[1][0] * 1e6 - static::$_times[0][0] * 1e6) / 1e6 + (static::$_times[1][1] - static::$_times[0][1]);
     }
 }
