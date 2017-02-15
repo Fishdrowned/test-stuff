@@ -1,0 +1,12 @@
+#mbz{
+    display:block;
+    margin:0 auto;
+}
+
+#tool #clear{
+    float:right;
+}
+
+.clear{
+    clear:both;
+}

@@ -66,6 +66,14 @@ function varUnserialize($value) {
 	$result = unserialize($value);
 	return is_scalar($result) ? $result : var_export($result, 1);
 }
+
+function base64GzDeflate($value) {
+    return base64_encode(gzdeflate($value, 9));
+}
+
+function base64GzInflate($value) {
+    return gzinflate(base64_decode($value));
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -88,6 +96,8 @@ function varUnserialize($value) {
 		<button type="submit" name="type" value="intHashEncode">intHashEncode</button>
 		<button type="submit" name="type" value="intHashDecode">intHashDecode</button>
 		<button type="submit" name="type" value="checkPasswordHash">checkPasswordHash</button>
+        <button type="submit" name="type" value="base64GzDeflate">base64GzDeflate</button>
+        <button type="submit" name="type" value="base64GzInflate">base64GzInflate</button>
 	</p>
 </form>
 <div>
