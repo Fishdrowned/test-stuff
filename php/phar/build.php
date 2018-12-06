@@ -22,8 +22,12 @@ if (isset($argv[1])) {
 
     $phar = new Phar($outputFile, 0, $packageName);
     $phar->buildFromDirectory($target);
-    $phar->setStub("<?php echo '{$packageName}
+    if (is_file($target . '/index.php')) {
+        $phar->setDefaultStub('index.php');
+    } else {
+        $phar->setStub("<?php echo '{$packageName}
 '; __HALT_COMPILER();");
+    }
 } else {
     $script = isset($argv[0]) ? $argv[0] : basename(__FILE__);
     echo "Usage: {$script} <dir> [package_name] [<save_dir>]
