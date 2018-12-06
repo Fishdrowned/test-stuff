@@ -1,0 +1,16 @@
+<script>
+    xObject = function () {
+        var privateProperties = {
+            x: 1,
+            onPlayCards: function (seatNo, cards) {
+            }
+        };
+        return {
+            y: 2,
+            getX: function () {
+                return privateProperties.x;
+            }
+        };
+    }();
+    console.log(xObject.getX());
+</script>
