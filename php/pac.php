@@ -1,7 +1,12 @@
 <?php
-$pac = <<<JS
+$pac = <<<'JS'
+/**
+ * Available parameters:
+ *      proxy - ip:port, e.g. 127.0.0.1:7070
+ *      type  - one of "PROXY", "HTTP", "HTTPS", "SOCKS", "SOCKS4" or "SOCKS5"
+ */
 function FindProxyForURL(url, host) {
-    var autoProxy = "SOCKS5 127.0.0.1:8119",
+    var autoProxy = "SOCKS 127.0.0.1:8119",
         blackHole = /*"DIRECT", _blackHole =*/ "PROXY 127.0.0.1:8110",
         noProxy = "DIRECT";
 
@@ -525,8 +530,13 @@ var proxyHosts = {
 };
 JS;
 header('content-type: application/javascript');
+
 $defaultProxy = '127.0.0.1:8119';
 $proxy = $_GET['proxy'] ?? '';
 preg_match('/^[0-9\.]+:\d+$/', $proxy) or $proxy = $defaultProxy;
 
-echo str_replace('127.0.0.1:8119', $proxy, $pac);
+$defaultType = 'SOCKS';
+$type = strtoupper($_GET['type'] ?? '');
+in_array($type, ['PROXY', 'HTTP', 'HTTPS', 'SOCKS', 'SOCKS4', 'SOCKS5']) or $type = $defaultType;
+
+echo str_replace(['127.0.0.1:8119', '"SOCKS'], [$proxy, '"' . $type], $pac);
