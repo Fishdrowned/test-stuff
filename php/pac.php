@@ -1,3 +1,5 @@
+<?php
+$pac = <<<JS
 function FindProxyForURL(url, host) {
     var autoProxy = "SOCKS5 127.0.0.1:8119",
         blackHole = /*"DIRECT", _blackHole =*/ "PROXY 127.0.0.1:8110",
@@ -521,3 +523,10 @@ var proxyHosts = {
     "zonble.net":1,"zootool.com":1,"zoozle.net":1,"zozotown.com":1,"zshare.net":1,"zsrhao.com":1,"zuo.la":1,
     "zuola.com":1,"zvereff.com":1,"zyzc9.com":1
 };
+JS;
+header('content-type: application/javascript');
+$defaultProxy = '127.0.0.1:8119';
+$proxy = $_GET['proxy'] ?? '';
+preg_match('/^[0-9\.]+:\d+$/', $proxy) or $proxy = $defaultProxy;
+
+echo str_replace('127.0.0.1:8119', $proxy, $pac);
