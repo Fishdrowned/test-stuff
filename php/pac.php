@@ -3,10 +3,10 @@
  * Available parameters:
  *      proxy - ip:port, e.g. 127.0.0.1:7070
  *      type  - one of "PROXY", "HTTP", "HTTPS", "SOCKS", "SOCKS4" or "SOCKS5"
- *      mime  - js or pac, default pac
+ *      mime  - js or pac, default js
  */
 function FindProxyForURL(url, host) {
-    var autoProxy = "SOCKS 127.0.0.1:8119",
+    var autoProxy = "SOCKS5 127.0.0.1:8119",
         blackHole = /*"DIRECT", _blackHole =*/ "PROXY 127.0.0.1:8110",
         noProxy = "DIRECT";
 
@@ -530,14 +530,17 @@ var proxyHosts = {
 };
 <?php
 $pac = ob_get_clean();
-header('content-type: application/javascript');
+$mimeTypes = ['js' => 'application/javascript', 'pac' => 'application/x-ns-proxy-autoconfig'];
+$mime = $_GET['mime'] ?? '';
+isset($mimeTypes[$mime]) or $mime = 'js';
+header('content-type: ' . $mimeTypes[$mime]);
 
 $defaultProxy = '127.0.0.1:8119';
 $proxy = $_GET['proxy'] ?? '';
 preg_match('/^[0-9\.]+:\d+$/', $proxy) or $proxy = $defaultProxy;
 
-$defaultType = 'SOCKS';
+$types = ['SOCKS5', 'SOCKS', 'SOCKS4', 'PROXY', 'HTTP', 'HTTPS'];
 $type = strtoupper($_GET['type'] ?? '');
-in_array($type, ['PROXY', 'HTTP', 'HTTPS', 'SOCKS', 'SOCKS4', 'SOCKS5']) or $type = $defaultType;
+in_array($type, $types) or $type = reset($types);
 
-echo str_replace(['127.0.0.1:8119', '"SOCKS'], [$proxy, '"' . $type], $pac);
+echo str_replace(['127.0.0.1:8119', '"SOCKS5'], [$proxy, '"' . $type], $pac);
