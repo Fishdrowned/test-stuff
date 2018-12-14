@@ -1,9 +1,9 @@
-<?php
-$pac = <<<'JS'
+<?php ob_start();?><script><?php ob_end_clean(); ob_start(); ?>
 /**
  * Available parameters:
  *      proxy - ip:port, e.g. 127.0.0.1:7070
  *      type  - one of "PROXY", "HTTP", "HTTPS", "SOCKS", "SOCKS4" or "SOCKS5"
+ *      mime  - js or pac, default pac
  */
 function FindProxyForURL(url, host) {
     var autoProxy = "SOCKS 127.0.0.1:8119",
@@ -248,7 +248,7 @@ var proxyHosts = {
     "great-firewall.com":1,"great-roc.org":1,"greatfire.org":1,"greatfirewall.biz":1,"greatfirewallofchina.net":1,
     "greatfirewallofchina.org":1,"greatroc.org":1,"greatroc.tw":1,"greatzhonghua.org":1,"greenparty.org.tw":1,
     "greenvpn.net":1,"gs-discuss.com":1,"gstatic.com":1,"gtricks.com":1,"guancha.org":1,"guishan.org":1,
-    "gun-world.net":1,"gunsamerica.com":1,"guomin.us":1,"gutteruncensored.com":1,"gvm.com.tw":1,"gyalwarinpoche.com":1,
+    "gun-world.net":1,"gunsamerica.com":1,"guo.media":1,"guomin.us":1,"gutteruncensored.com":1,"gvm.com.tw":1,"gyalwarinpoche.com":1,
     "gzm.tv":1,"gzone-anime.info":1,"h-china.org":1,"h1n1china.org":1,"hacken.cc":1,"hackthatphone.net":1,
     "hahlo.com":1,"hakkatv.org.tw":1,"hanunyi.com":1,"hardsextube.com":1,"hasaowall.com":1,"have8.com":1,"hdtvb.net":1,
     "heartyit.com":1,"hecaitou.net":1,"hechaji.com":1,"heix.pp.ru":1,"heiyo.info":1,"helloandroid.com":1,
@@ -528,7 +528,8 @@ var proxyHosts = {
     "zonble.net":1,"zootool.com":1,"zoozle.net":1,"zozotown.com":1,"zshare.net":1,"zsrhao.com":1,"zuo.la":1,
     "zuola.com":1,"zvereff.com":1,"zyzc9.com":1
 };
-JS;
+<?php
+$pac = ob_get_clean();
 header('content-type: application/javascript');
 
 $defaultProxy = '127.0.0.1:8119';
