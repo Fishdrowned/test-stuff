@@ -453,7 +453,7 @@ var proxyHosts = {
     "tripod.com":1,"trouw.nl":1,"trtc.com.tw":1,"trulyergonomic.com":1,"trustedbi.com":1,"truthcn.com":1,
     "truveo.com":1,"tsctv.net":1,"tsemtulku.com":1,"tsquare.tv":1,"tsunagarumon.com":1,"tsuru-bird.net":1,
     "tt1069.com":1,"tttan.com":1,"ttv.com.tw":1,"tuanzt.com":1,"tube.com":1,"tube8.com":1,"tubecao.com":1,
-    "tubewolf.com":1,"tuidang.net":1,"tuidang.org":1,"tuitui.info":1,"tumblweed.org":1,"tumutanzi.com":1,
+    "tubewolf.com":1,"tuidang.net":1,"tuidang.org":1,"tuitui.info":1,"tumblr.com":1,"tumblweed.org":1,"tumutanzi.com":1,
     "tunein.com":1,"tunnelbear.com":1,"turbobit.net":1,"turbotwitter.com":1,"turningtorso.com":1,"turntable.fm":1,
     "tuxtraining.com":1,"tv-intros.com":1,"tv.com":1,"tvants.com":1,"tvb.com":1,"tvboxnow.com":1,"tvider.com":1,
     "tvunetworks.com":1,"tw":1,"tw-npo.org":1,"twa.sh":1,"twapperkeeper.com":1,"twaud.io":1,"twbbs.net.tw":1,
