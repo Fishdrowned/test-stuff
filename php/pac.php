@@ -134,7 +134,7 @@ var proxyHosts = {
     "blog.de":1,"blog.s135.com":1,"blogblog.com":1,"blogcatalog.com":1,"blogger.com":1,"blogimg.jp":1,
     "bloglines.com":1,"bloglovin.com":1,"blogs.com":1,"blogspot.com":1,"blogspot.de":1,"blogspot.fr":1,"blogspot.hk":1,
     "blogspot.in":1,"blogspot.jp":1,"blogspot.sg":1,"blogtd.net":1,"blogtd.org":1,"bloodshed.net":1,"bloomberg.com":1,
-    "bloomberg.de":1,"bloomfortune.com":1,"bnrmetal.com":1,"boardreader.com":1,"bobulate.com":1,"bonbonme.com":1,
+    "bloomberg.de":1,"bloomfortune.com":1,"bluestacks.com":1,"bnrmetal.com":1,"boardreader.com":1,"bobulate.com":1,"bonbonme.com":1,
     "bonjourlesgeeks.com":1,"books.com.tw":1,"bookshelfporn.com":1,"bot.nu":1,"botanwang.com":1,"bowenpress.com":1,
     "box.net":1,"boxcar.io":1,"boxun.com":1,"boxun.tv":1,"boxunblog.com":1,"br.st":1,"bralio.com":1,"branch.com":1,
     "brandonhutchinson.com":1,"braumeister.org":1,"break.com":1,"breakingtweets.com":1,"briefdream.com":1,
