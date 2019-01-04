@@ -6,4 +6,4 @@ function random($length = 16)
     return substr(str_replace(['/', '+', '='], '', base64_encode($bytes)), 0, $length);
 }
 
-var_dump(random(32));
+var_dump($random = random(32), substr($random, 0, 16), substr($random, 0, 8));
