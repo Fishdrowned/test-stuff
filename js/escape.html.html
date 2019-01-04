@@ -1,0 +1,15 @@
+<script>
+    !function () {
+        var source = '<img>';
+
+        function escapeHTML(html) {
+            var converter = document.createElement('div');
+            converter.textContent = html;
+            return converter.innerHTML;
+        }
+
+        console.log(source);
+        console.log(escapeHTML(source));
+    }()
+</script>
+<p>Open the console to see the output text</p>
