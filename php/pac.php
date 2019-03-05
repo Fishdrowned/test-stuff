@@ -22,7 +22,7 @@ function FindProxyForURL(url, host) {
         return noProxy;
     } else if (isHostInList(host, blockHosts)) {
         return blackHole;
-    } else if (shExpMatch(host, "*.google*.*") || isHostInList(host, proxyHosts)) {
+    } else if (shExpMatch(host, "*.google*.*") || shExpMatch(host, "*.google$") || isHostInList(host, proxyHosts)) {
         return autoProxy;
     } else {
         return noProxy;
@@ -42,7 +42,7 @@ function isHostInList(host, list) {
 }
 
 var blockHosts = {
-    "0aac4e6a54c170b0.se":1,"118.26.200.246":1,"122.227.254.195":1,"138.138.in":1,"15.taboola.com":1,"20d625b48e.se":1,
+    "0aac4e6a54c170b0.se":1,"118.26.200.246":1,"122.227.254.195":1,"138.138.in":1,"taboola.com":1,"20d625b48e.se":1,
     "220.115.251.25":1,"29bca6cb72a665c8.se":1,"2m2n.com":1,"2mdn.net":1,"360safego.com":1,"365bibi.com":1,
     "3c45d848d99.se":1,"411pp.net":1,"50.117.120.149":1,"77power.com":1,"85dcf732d593.se":1,"86file.megajoy.com":1,
     "8jkx.com":1,"91339.com":1,"a-m-s.poco.cn":1,"a.alimama.cn":1,"a.baomihua.com":1,"a.xizi.com":1,"a.youdao.com":1,
@@ -56,7 +56,7 @@ var blockHosts = {
     "analytics.tv189.cn":1,"aoodoo.feng.com":1,"apikozakanet-a.akamaihd.net":1,"apiscantacknet-a.akamaihd.net":1,
     "app.acm.dzwww.com":1,"appnext-a.akamaihd.net":1,"as.sinahk.net":1,"ashow.pcpop.com":1,"atm.youku.com":1,
     "ba2b687.se":1,"biz.gexing.com":1,"biz.weibo.com":1,"brand.sogou.com":1,"btn.onlylady.com":1,"btn.pchome.net":1,
-    "cachead.com":1,"cb.baidu.com":1,"cbjs.baidu.com":1,"cdn.taboola.com":1,"cdnlog.zhenai.com":1,"ck.sdo.com":1,
+    "cachead.com":1,"cb.baidu.com":1,"cbjs.baidu.com":1,"taboola.com.cn":1,"cdnlog.zhenai.com":1,"ck.sdo.com":1,
     "click.bokecc.com":1,"click.tianyaui.com":1,"cnxad.net":1,"copy.ousns.com":1,"count.enet.com.cn":1,
     "countpage.sznews.com":1,"cpro.baidu.com":1,"cpro.baidustatic.com":1,"crdrjs.info":1,"crs.baidu.com":1,
     "cyacc.com":1,"d0.xcar.com.cn":1,"d9ae99824.se":1,"data.xici.net":1,"datafastguru.info":1,"dc.letv.com":1,
@@ -99,7 +99,7 @@ var proxyHosts = {
     "0rz.tw":1,"0to255.com":1,"1-apple.com.tw":1,"10musume.com":1,"123rf.com":1,"12bet.com":1,"12vpn.com":1,
     "141hongkong.com":1,"173ng.com":1,"174.142.105.153":1,"1984bbs.com":1,"1984bbs.org":1,"199.59.148.20":1,
     "1bao.org":1,"1eew.com":1,"1pondo.tv":1,"2-hand.info":1,"2000fun.com":1,"2008xianzhang.info":1,"21andy.com":1,
-    "24smile.org":1,"2shared.com":1,"301works.org":1,"315lz.com":1,"32red.com":1,"365singles.com.ar":1,"36rain.com":1,
+    "24smile.org":1,"2shared.com":1,"301works.org":1,"315lz.com":1,"32red.com":1,"35photo.pro":1,"365singles.com.ar":1,"36rain.com":1,
     "4bluestones.biz":1,"4chan.org":1,"4shared.com":1,"4sq.com":1,"50webs.com":1,"51.ca":1,"5i01.com":1,
     "5maodang.com":1,"6-4.net":1,"64tianwang.com":1,"64wiki.com":1,"666kb.com":1,"67.220.91.18":1,"67.220.91.23":1,
     "69.65.19.160":1,"6park.com":1,"6v6dota.com":1,"72.52.81.22":1,"7capture.com":1,"881903.com":1,"888.com":1,
@@ -301,10 +301,10 @@ var proxyHosts = {
     "lianyue.net":1,"liaowangxizang.net":1,"liberal.org.hk":1,"libertytimes.com.tw":1,"lidecheng.com":1,
     "lightbox.com":1,"limiao.net":1,"line.me":1,"linglingfa.com":1,"linkideo.com":1,"linksalpha.com":1,"linpie.com":1,
     "linux-engineer.net":1,"linuxconfig.org":1,"linuxreviews.org":1,"linuxtoy.org":1,"lipuman.com":1,"list.ly":1,
-    "listentoyoutube.com":1,"listorious.com":1,"littlebigdetails.com":1,"liu.lu":1,"liudejun.com":1,"liuhanyu.com":1,
+    "listentoyoutube.com":1,"listorious.com":1,"lithium.com":1,"littlebigdetails.com":1,"liu.lu":1,"liudejun.com":1,"liuhanyu.com":1,
     "liujianshu.com":1,"liuxiaotong.com":1,"liveleak.com":1,"livestation.com":1,"livestream.com":1,"livevideo.com":1,
     "livingonline.us":1,"livingstream.com":1,"lizhizhuangbi.com":1,"lkcn.net":1,"localpresshk.com":1,"lockdown.com":1,
-    "lockestek.com":1,"logbot.net":1,"logiqx.com":1,"logmike.com":1,"loiclemeur.com":1,"longhair.hk":1,
+    "lockestek.com":1,"logbot.net":1,"logiqx.com":1,"logmatic.io":1,"logmike.com":1,"loiclemeur.com":1,"longhair.hk":1,
     "longtermly.net":1,"lookatgame.com":1,"lookingglasstheatre.org":1,"lookpic.com":1,"lotuslight.org.tw":1,
     "loved.hk":1,"lovequicksilver.com":1,"lrfz.com":1,"lrip.org":1,"lsd.org.hk":1,"lsforum.net":1,"lsm.org":1,
     "lsmchinese.org":1,"lsmkorean.org":1,"lupm.org":1,"lushstories.com":1,"lvhai.org":1,"lyricsquote.com":1,
@@ -495,7 +495,7 @@ var proxyHosts = {
     "wellplacedpixels.com":1,"wengewang.com":1,"wengewang.org":1,"wenhui.ch":1,"wenku.com":1,"wenweipo.com":1,
     "wenxuecity.com":1,"wenyunchao.com":1,"wepn.info":1,"westca.com":1,"westernwolves.com":1,"westkit.net":1,
     "wet123.com":1,"wetplace.com":1,"wetpussygames.com":1,"wexiaobo.org":1,"wezhiyong.org":1,"wezone.net":1,
-    "wforum.com":1,"whatblocked.com":1,"whatsapp.com":1,"whereiswerner.com":1,"whippedass.com":1,"whydidyoubuymethat.com":1,
+    "wforum.com":1,"whatblocked.com":1,"whatsapp.com":1,"whatsapp.net":1,"whereiswerner.com":1,"whippedass.com":1,"whydidyoubuymethat.com":1,
     "whylover.com":1,"whyx.org":1,"wikia.com":1,"wikibooks.org":1,"wikileaks.ch":1,"wikileaks.de":1,"wikileaks.eu":1,
     "wikileaks.lu":1,"wikileaks.org":1,"wikileaks.pl":1,"wikilivres.info":1,"wikimapia.org":1,"wikimedia.org":1,
     "wikimedia.org.mo":1,"wikinews.org":1,"wikipedia.org":1,"wikisource.org":1,"wikiwiki.jp":1,"williamhill.com":1,
@@ -504,7 +504,7 @@ var proxyHosts = {
     "wolfax.com":1,"womensrightsofchina.org":1,"woopie.jp":1,"woopie.tv":1,"wordboner.com":1,"wordpress.com":1,
     "wordsandturds.com":1,"workatruna.com":1,"worldcat.org":1,"worldjournal.com":1,"worstthingieverate.com":1,
     "wow-life.net":1,"woxinghuiguo.com":1,"wozy.in":1,"wp.com":1,"wp.me":1,"wpoforum.com":1,"wqlhw.com":1,"wqyd.org":1,
-    "wrchina.org":1,"wretch.cc":1,"wsj.com":1,"wtfpeople.com":1,"wuala.com":1,"wuerkaixi.com":1,"wufi.org.tw":1,
+    "wrchina.org":1,"wretch.cc":1,"wsgzao.github.io":1,"wsj.com":1,"wtfpeople.com":1,"wuala.com":1,"wuerkaixi.com":1,"wufi.org.tw":1,
     "wujie.net":1,"wujieliulan.com":1,"wukangrui.net":1,"wwitv.com":1,"www.syntevo.com":1,"www.ukchinese.com":1,
     "wzyboy.im":1,"x-art.com":1,"x-berry.com":1,"x-wall.org":1,"x1949x.com":1,"x365x.com":1,"xanga.com":1,
     "xbabe.com":1,"xbookcn.com":1,"xcafe.in":1,"xcity.jp":1,"xcritic.com":1,"xda-developers.com":1,"xfiles.to":1,
@@ -543,4 +543,4 @@ $types = ['SOCKS5', 'SOCKS', 'SOCKS4', 'PROXY', 'HTTP', 'HTTPS'];
 $type = strtoupper($_GET['type'] ?? '');
 in_array($type, $types) or $type = reset($types);
 
-echo str_replace(['127.0.0.1:8119', '"SOCKS5'], [$proxy, '"' . $type], $pac);
+echo str_replace('SOCKS5 127.0.0.1:8119', "{$type} {$proxy}", $pac);
