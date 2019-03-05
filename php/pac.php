@@ -10,7 +10,9 @@ function FindProxyForURL(url, host) {
         blackHole = /*"DIRECT", _blackHole =*/ "PROXY 127.0.0.1:8110",
         noProxy = "DIRECT";
 
-    if (isPlainHostName(host) ||
+    if (isHostInList(host, blockHosts)) {
+        return blackHole;
+    } else if (isPlainHostName(host) ||
         shExpMatch(host, "*.cn") ||
         shExpMatch(host, "*.dev") ||
         shExpMatch(host, "*.off") ||
@@ -20,8 +22,6 @@ function FindProxyForURL(url, host) {
         host.indexOf("10.") == 0
     ) {
         return noProxy;
-    } else if (isHostInList(host, blockHosts)) {
-        return blackHole;
     } else if (shExpMatch(host, "*.google*.*") || shExpMatch(host, "*.google$") || isHostInList(host, proxyHosts)) {
         return autoProxy;
     } else {
