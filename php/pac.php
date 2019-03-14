@@ -1,9 +1,11 @@
-<?php ob_start();?><script><?php ob_end_clean(); ob_start(); ?>
+<?php if (0) { ?><script>FindProxyForURL('', ''); shExpMatch = isPlainHostName = function(){return true};
+<?php } ob_start(); ?>
 /**
  * Available parameters:
  *      proxy - ip:port, e.g. 127.0.0.1:7070
  *      type  - one of "PROXY", "HTTP", "HTTPS", "SOCKS", "SOCKS4" or "SOCKS5"
  *      mime  - js or pac, default js
+ * @return {string}
  */
 function FindProxyForURL(url, host) {
     var autoProxy = "SOCKS5 127.0.0.1:8119",
@@ -17,9 +19,9 @@ function FindProxyForURL(url, host) {
         shExpMatch(host, "*.dev") ||
         shExpMatch(host, "*.off") ||
         shExpMatch(host, "*localhost.*") ||
-        host.indexOf("127.") == 0 ||
-        host.indexOf("192.168.") == 0 ||
-        host.indexOf("10.") == 0
+        host.indexOf("127.") === 0 ||
+        host.indexOf("192.168.") === 0 ||
+        host.indexOf("10.") === 0
     ) {
         return noProxy;
     } else if (shExpMatch(host, "*.google*.*") || shExpMatch(host, "*.google$") || isHostInList(host, proxyHosts)) {
