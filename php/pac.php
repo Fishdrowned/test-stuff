@@ -7,7 +7,7 @@
  */
 function FindProxyForURL(url, host) {
     var autoProxy = "SOCKS5 127.0.0.1:8119",
-        blackHole = /*"DIRECT", _blackHole =*/ "PROXY 127.0.0.1:8110",
+        blackHole = "PROXY 127.0.0.1:8110",
         noProxy = "DIRECT";
 
     if (isHostInList(host, blockHosts)) {
@@ -25,6 +25,7 @@ function FindProxyForURL(url, host) {
     } else if (shExpMatch(host, "*.google*.*") || shExpMatch(host, "*.google$") || isHostInList(host, proxyHosts)) {
         return autoProxy;
     } else {
+        <?php is_file($extraFile = __DIR__ . '/pac_extra.js') and include $extraFile; ?>
         return noProxy;
     }
 }
