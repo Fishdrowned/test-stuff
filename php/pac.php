@@ -251,7 +251,7 @@ var proxyHosts = {
     "great-firewall.com":1,"great-roc.org":1,"greatfire.org":1,"greatfirewall.biz":1,"greatfirewallofchina.net":1,
     "greatfirewallofchina.org":1,"greatroc.org":1,"greatroc.tw":1,"greatzhonghua.org":1,"greenparty.org.tw":1,
     "greenvpn.net":1,"gs-discuss.com":1,"gstatic.com":1,"gtricks.com":1,"guancha.org":1,"guishan.org":1,
-    "gun-world.net":1,"gunsamerica.com":1,"guo.media":1,"guomin.us":1,"gutteruncensored.com":1,"gvm.com.tw":1,"gyalwarinpoche.com":1,
+    "gun-world.net":1,"gunsamerica.com":1,"guo.media":1,"guomin.us":1,"gutteruncensored.com":1,"gvm.com.tw":1,"gvt1.com":1,"gyalwarinpoche.com":1,
     "gzm.tv":1,"gzone-anime.info":1,"h-china.org":1,"h1n1china.org":1,"hacken.cc":1,"hackthatphone.net":1,
     "hahlo.com":1,"hakkatv.org.tw":1,"hanunyi.com":1,"hardsextube.com":1,"hasaowall.com":1,"have8.com":1,"hdtvb.net":1,
     "heartyit.com":1,"hecaitou.net":1,"hechaji.com":1,"heix.pp.ru":1,"heiyo.info":1,"helloandroid.com":1,
