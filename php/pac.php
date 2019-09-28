@@ -94,7 +94,7 @@ var blockHosts = {
     "sync.search.spotxchange.com":1,"tajs.qq.com":1,"tcss.qq.com":1,"tf.360.cn":1,"tg.1155t.cn":1,
     "tongji.500wan.com":1,"ttmsg.qianqian.com":1,"tuiguang.178.com":1,"ubmcmm.baidustatic.com":1,"un.5d6d.com":1,
     "union.china.com.cn":1,"unionjs.dianxin.com":1,"up.hiao.com":1,"uu456.com":1,"v-56.com":1,"vas.funshion.com":1,
-    "vupload.duowan.com":1,"wn.pos.baidu.com":1,"wp.ylaop.com":1,"www.googletagmanager.com":1,"xc.macd.cn":1,
+    "vupload.duowan.com":1,"pos.baidu.com":1,"wp.ylaop.com":1,"www.googletagmanager.com":1,"xc.macd.cn":1,
     "xcy8.com":1,"xls.go.sohu.com":1,"xs.houyi.baofeng.net":1,"yktj.yzz.cn":1,"zt2088.com":1,"zvweapp.com":1
 };
 
