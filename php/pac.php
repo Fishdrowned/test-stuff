@@ -69,7 +69,7 @@ var blockHosts = {
     "eclick.baidu.com":1,"ecma.bdimg.com":1,"eiv.baidu.com":1,"error.pixplug.in":1,"event.udn.com":1,"fun.ynet.com":1,
     "fv99.com":1,"g.hsw.cn":1,"g1.0573ren.com":1,"g1.sdo.com":1,"gdt.qq.com":1,"gf1352.com":1,"gg.kugou.com":1,
     "ggg.zj.com":1,"ggw.gusuwang.com":1,"ggw.watertu.com":1,"go.hangzhou.com.cn":1,"goto.www.iciba.com":1,
-    "gqgc.sz.zj.cn":1,"groupa.onlylady.com":1,"gzqudou.com":1,"hdapp1003-a.akamaihd.net":1,
+    "gqgc.sz.zj.cn":1,"gridsumdissector.com":1,"groupa.onlylady.com":1,"gzqudou.com":1,"hdapp1003-a.akamaihd.net":1,
     "hdapp1008-a.akamaihd.net":1,"hiad.myweb.hinet.net":1,"hiad.vmall.com":1,"hm.baidu.com":1,"hudong.pl.youku.com":1,
     "hxjs.tool.hexun.com":1,"iads.xinmin.cn":1,"ifx.aifang.com":1,"image.6park.com":1,"images.chinaz.com":1,
     "images.gxsky.com":1,"imedia.bokecc.com":1,"img.163vv.com":1,"img.adsame.liba.com":1,"img1.126.net":1,
