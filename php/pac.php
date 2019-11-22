@@ -366,7 +366,7 @@ var proxyHosts = {
     "pekingduck.org":1,"penchinese.com":1,"penchinese.net":1,"pengyulong.com":1,"pentalogic.net":1,"penthouse.com":1,
     "peopo.org":1,"percy.in":1,"perfectvpn.net":1,"perfspot.com":1,"perlhowto.com":1,"philly.com":1,"phonegap.com":1,
     "photofocus.com":1,"phuquocservices.com":1,"picidae.net":1,"picturedip.com":1,"picturesocial.com":1,"pidown.com":1,
-    "pign.net":1,"pikchur.com":1,"pilotmoon.com":1,"pin6.com":1,"ping.fm":1,"pinoy-n.com":1,"piring.com":1,
+    "pign.net":1,"pikchur.com":1,"pilotmoon.com":1,"pin6.com":1,"pincong.rocks":1,"ping.fm":1,"pinoy-n.com":1,"piring.com":1,
     "pixelqi.com":1,"pixnet.in":1,"pixnet.net":1,"pk.com":1,"placemix.com":1,"planetsuzy.org":1,"playboy.com":1,
     "plays.com.tw":1,"plixi.com":1,"plm.org.hk":1,"plugins.jetbrains.com":1,"plunder.com":1,"plus28.com":1,
     "plusbb.com":1,"pmates.com":1,"po.st":1,"po2b.com":1,"podictionary.com":1,"pokerstars.com":1,"pokerstrategy.com":1,
