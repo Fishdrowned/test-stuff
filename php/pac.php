@@ -315,7 +315,7 @@ var proxyHosts = {
     "mailchimp.com":1,"maiplus.com":1,"makemymood.com":1,"malaysiakini.com":1,"marc.info":1,"marco.org":1,
     "marguerite.su":1,"marines.mil":1,"markmail.org":1,"markmilian.com":1,"martau.com":1,"martincartoons.com":1,
     "maruta.be":1,"marxist.com":1,"marxist.net":1,"marxists.org":1,"mash.to":1,"mashable.com":1,"matainja.com":1,
-    "material.io":1,"mathiew-badimon.com":1,"matsushimakaede.com":1,"maxgif.com":1,"mayimayi.com":1,"mcadforums.com":1,
+    "material.io":1,"matters.news":1,"mathiew-badimon.com":1,"matsushimakaede.com":1,"maxgif.com":1,"mayimayi.com":1,"mcadforums.com":1,
     "mcfog.com":1,"md-t.org":1,"mediafire.com":1,"medium.com":1,"meetup.com":1,"mefeedia.com":1,"mega.nz":1,
     "megabyet.net":1,"megaporn.com":1,"megarotic.com":1,"megavideo.com":1,"megurineluka.com":1,"meirixiaochao.com":1,
     "melon-peach.com":1,"memrijttm.org":1,"merit-times.com.tw":1,"mesotw.com":1,"metacafe.com":1,
